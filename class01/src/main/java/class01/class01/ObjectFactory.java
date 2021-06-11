@@ -41,8 +41,4 @@ public class ObjectFactory {
 		}
 		return calculator;
 	}
-
-	public static void main(String[] args) {
-		getInstance().getLoanCalculatorObject();
-	}
 }
