@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="employee" class="com.learning.spring.conswiring.Employee">
+		<constructor-arg name="department" ref="department"> </constructor-arg>
+	</bean>
+	<bean id="department" class="com.learning.spring.conswiring.Department"></bean>
+	
+<!-- 	<bean id="organization" class="com.learning.spring.Organization">
+	</bean> -->
+</beans>

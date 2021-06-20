@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="employee" class="com.learning.spring.Employee">
+		<property name="department" ref="department"></property>
+	</bean>
+	<bean id="department" class="com.learning.spring.Department"></bean>
+	
+<!-- 	<bean id="organization" class="com.learning.spring.Organization">
+	</bean> -->
+</beans>

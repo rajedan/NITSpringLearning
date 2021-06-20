@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>class02</groupId>
-	<artifactId>class02</artifactId>
+	<groupId>class03</groupId>
+	<artifactId>class03</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>class02</name>
+	<name>class03</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -30,6 +30,5 @@
 			<artifactId>spring-context</artifactId>
 			<version>5.0.5.RELEASE</version>
 		</dependency>
-
 	</dependencies>
 </project>
