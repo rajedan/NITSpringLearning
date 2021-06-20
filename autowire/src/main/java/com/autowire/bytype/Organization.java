@@ -9,12 +9,14 @@ public class Organization {
 		return department;
 	}
 	public void setDepartment(Department department) {
+		System.out.println("in-setDepartment of Organization");
 		this.department = department;
 	}
 	public NewDepartment getNewDepartment() {
 		return newDepartment;
 	}
 	public void setNewDepartment(NewDepartment newDepartment) {
+		System.out.println("in-setNewDepartment of Organization");
 		this.newDepartment = newDepartment;
 	}
 }

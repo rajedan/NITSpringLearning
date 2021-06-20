@@ -8,10 +8,10 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("appcontext_bytype.xml");
 		
-		Department dept = (Department)ctx.getBean("department");
+		Department dept = (Department)ctx.getBean("department33");
 		System.out.println("dept: "+dept);
 		
-		NewDepartment dept1 = (NewDepartment)ctx.getBean("department1");
+		NewDepartment dept1 = (NewDepartment)ctx.getBean("department133");
 		System.out.println("dept: "+dept1);
 		System.out.println("--------------------");
 		

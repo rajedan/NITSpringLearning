@@ -6,8 +6,11 @@
 	<!-- bean definitions here -->
 
 	<bean id="employee" class="com.autowire.bytype.Employee"/>
-	<bean id="department" class="com.autowire.bytype.Department"/>
-	<bean id="department1" class="com.autowire.bytype.NewDepartment"/>
+	<bean id="department33" class="com.autowire.bytype.Department"/>
+	<!-- <bean id="department336" class="com.autowire.bytype.Department"/>
+	there will be error if we uncomment this line of code 
+	-->
+	<bean id="department133" class="com.autowire.bytype.NewDepartment"/>
 
 	<bean id="org" class="com.autowire.bytype.Organization" autowire="byType"></bean>
 	

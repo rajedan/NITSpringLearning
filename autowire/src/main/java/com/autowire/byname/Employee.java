@@ -18,9 +18,11 @@ public class Employee {
 		this.empName = empName;
 	}
 	public Department getDepartment() {
+		System.out.println("in getDepartment");
 		return department;
 	}
 	public void setDepartment(Department department) {
+		System.out.println("in setDepartment");
 		this.department = department;
 	}
 }

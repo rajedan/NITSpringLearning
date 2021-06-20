@@ -1,5 +1,7 @@
 package com.autowire.cons;
 
+import java.util.List;
+
 public class Employee {
 	private String empId;
 	private String empName;
@@ -10,7 +12,18 @@ public class Employee {
 		System.out.println("dept1");
 	}
 	
-	Employee(Department dept10, AdvancedeDepartment dept23) {
+	Employee(Department dept1, AdvancedeDepartment dept2) {
 		System.out.println("dept1, dept2");
+	}
+	
+	Employee(List<Department> dept1s, AdvancedeDepartment dept23) {
+		System.out.println("list-dept1, dept2");
+	}
+	
+	Employee(Department dept1s, List<AdvancedeDepartment> dept23) {
+		System.out.println("dept1, list-dept2");
+	}
+	Employee(List<Department> dept1s, List<AdvancedeDepartment> dept23) {
+		System.out.println("list-dept1, list-dept2");
 	}
 }
