@@ -1,5 +1,14 @@
 ## Autowiring
 
+#### Autowiring:
+Spring container will detect dependencies and inject those automatically but in case of manual wiring we specify the dependencies in the xml configuration file. Lines of XML code can be reduced because we will not specify the property name, constructor-arg in the beans.
+
+#### Types of Autowiring:
+
+1. By Name: byName
+2. By Type: byType
+3. Constructor: constructors
+
 ##1. By Type
 
 Syntax:
