@@ -25,3 +25,34 @@ checks for the entry in the config. XML file. If found, it injects the object.
 4. If there are more then one entry of bean for a class and other class(where it needs to be injected) has reference of it but not as List<InjectableObject> then Spring container confuse to inject one of the bean entry HENCE it gets errored out.
 
 5. If there are more then one bean entry in the xml for a class and this class has a List or Array list reference then all the listede beans are injected as member of the list.
+
+
+##2. By Constructor
+
+Syntax:
+``<bean id="beanId" class="com.BeanClassName" autowirer="constructor"/>``
+
+- autowire with constructor use constructor to inject dependencies
+- It is similiar to by type but it also gives preference to matche of the id of bean and name of the constructor parameter.
+-Spring container uses greedy way of choosing one constructor if multiple constructor found. Below are the rules which deepects which constructor gets choosen:
+
+Greedy pattern approach :
+Spring  will see for the bean id's matching with constructor arguments(parameters) along with types
+
+Matching preferences:
+
+Spring  will check for max arguments constructor(n arguments, this depends on no. of classes)
+
+All of the constructor argument names matching with bean id and class types
+
+Any of the constructor argument name matching with bean id and class type 
+
+Constructor that has arguments taking list arguments
+
+Repeat the steps for (n-1) arguments constructor
+
+
+##2. By Type
+- Uses setter method to inject dependencies
+- Matches type i.e. class type of the setter method of class and bean class in the xml.
+- If more then one bean entry is found in XML configuration file for a class then Spring container fails to inject this class object due to ambiguity and hence throws an error.

@@ -11,9 +11,13 @@ public class Employee {
 	Employee(Department dept1) {
 		System.out.println("dept1");
 	}
-	
+
 	Employee(Department dept1, AdvancedeDepartment dept2) {
 		System.out.println("dept1, dept2");
+	}
+	
+	Employee(AdvancedeDepartment dept2, Department dept1) {
+		System.out.println("dept2 dept1");
 	}
 	
 	Employee(List<Department> dept1s, AdvancedeDepartment dept23) {
