@@ -5,14 +5,8 @@
 
 	<!-- bean definitions here -->
 
-	<bean id="employee" class="com.autowire.bytype.Employee"/>
-	<bean id="department33" class="com.autowire.bytype.Department"/>
-	<!-- <bean id="department336" class="com.autowire.bytype.Department"/>
-	there will be error if we uncomment this line of code 
-	-->
-	<bean id="department133" class="com.autowire.bytype.NewDepartment"/>
-
-	<bean id="org" class="com.autowire.bytype.Organization" autowire="byType"></bean>
+	<bean id="employee" class="com.scope.scen1.Employee"/>
+	<bean id="department" class="com.scope.scen1.Department"/>
 	
 <!-- 	<bean id="organization" class="com.learning.spring.Organization">
 	</bean> -->
