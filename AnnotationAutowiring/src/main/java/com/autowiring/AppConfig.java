@@ -19,4 +19,11 @@ public class AppConfig {
 		System.out.println("Going to create Employee..");
 		return new Employee();
 	}
+	
+	@Bean("emp")
+	public Employee employee1() {
+		// TODO Auto-generated method stub
+		System.out.println("Going to create Employee1..");
+		return new Employee();
+	}
 }

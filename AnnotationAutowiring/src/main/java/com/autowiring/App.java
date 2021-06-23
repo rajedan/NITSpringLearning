@@ -20,5 +20,8 @@ public class App {
 		
 		dept = context.getBean("department", Department.class);
 		System.out.println("Another-Department: " + dept);
+		
+		emp = context.getBean("emp", Employee.class);
+		System.out.println("Employee1: " + emp);
 	}
 }
