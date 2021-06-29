@@ -14,5 +14,8 @@ public class App {
 
 		Department department = context.getBean("department", Department.class);
 		System.out.println("department: " + department);
+		
+		Organization org = context.getBean("org", Organization.class);
+		System.out.println("org: " + org);
 	}
 }

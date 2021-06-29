@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public class SorterImpl {
 
 	@Autowired
-	@Qualifier("merge")
+//	@Qualifier("merge")
 	private Sorter sorter;
 
 	/**

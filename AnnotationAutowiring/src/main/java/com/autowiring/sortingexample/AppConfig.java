@@ -2,6 +2,7 @@ package com.autowiring.sortingexample;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import com.autowiring.sortingexample.sorter.BubbleSorter;
 import com.autowiring.sortingexample.sorter.MergeSorter;
@@ -12,6 +13,7 @@ import com.autowiring.sortingexample.sorter.SorterImpl;
 public class AppConfig {
 
 	@Bean("bubble")
+	@Primary
 	public Sorter bubbleSorter() {
 		return new BubbleSorter();
 	}
