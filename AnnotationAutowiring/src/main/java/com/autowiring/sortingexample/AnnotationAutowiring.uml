@@ -1,2 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9VuZ4NXaEeu2A_BRQNE78Q" name="AnnotationAutowiring"/>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_9VuZ4NXaEeu2A_BRQNE78Q" name="AnnotationAutowiring">
+    <eAnnotations xmi:id="_9dfOwNXaEeu2A_BRQNE78Q" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_9dfOwdXaEeu2A_BRQNE78Q" source="codegen">
+        <details xmi:id="_9dfOwtXaEeu2A_BRQNE78Q" key="codegenDirectory" value="/AnnotationAutowiring/src/main/java"/>
+        <details xmi:id="_9qo58NXaEeu2A_BRQNE78Q" key="AssociatedSourceCode" value="/AnnotationAutowiring/src/main/java/com/autowiring/sortingexample/App.java;1372826368/1;/AnnotationAutowiring/src/main/java/com/autowiring/sortingexample/AppConfig.java;2847303758/1;/AnnotationAutowiring/src/main/java/com/autowiring/sortingexample/sorter/BubbleSorter.java;1729634711/1;/AnnotationAutowiring/src/main/java/com/autowiring/sortingexample/sorter/MergeSorter.java;3527176010/1;/AnnotationAutowiring/src/main/java/com/autowiring/sortingexample/sorter/Sorter.java;4048389240/1;/AnnotationAutowiring/src/main/java/com/autowiring/sortingexample/sorter/SorterImpl.java;1682783970/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_9kVdoNXaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_9kVdodXaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_9kVdotXaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_9kVdo9XaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_9kVdpNXaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_9kVdpdXaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_9kVdptXaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_9kVdp9XaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_9kWEsNXaEeu2A_BRQNE78Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9j1uYNXaEeu2A_BRQNE78Q" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_9j1uYdXaEeu2A_BRQNE78Q" name="autowiring">
+        <packagedElement xmi:type="uml:Package" xmi:id="_9j5_0NXaEeu2A_BRQNE78Q" name="sortingexample">
+          <packagedElement xmi:type="uml:Package" xmi:id="_9j5_0dXaEeu2A_BRQNE78Q" name="sorter">
+            <packagedElement xmi:type="uml:Class" xmi:id="_9kf1sNXaEeu2A_BRQNE78Q" name="BubbleSorter">
+              <interfaceRealization xmi:id="_9lAzENXaEeu2A_BRQNE78Q" client="_9kf1sNXaEeu2A_BRQNE78Q" supplier="_9kjgENXaEeu2A_BRQNE78Q" contract="_9kjgENXaEeu2A_BRQNE78Q"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9lR40NXaEeu2A_BRQNE78Q" name="sort" specification="_9kgcwNXaEeu2A_BRQNE78Q">
+                <ownedParameter xmi:id="_9lR40dXaEeu2A_BRQNE78Q" name="data">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lR40tXaEeu2A_BRQNE78Q" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		System.out.println(&quot;bubble-sort-is-used&quot;);
+		Arrays.sort(data);
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_9kgcwNXaEeu2A_BRQNE78Q" name="sort" method="_9lR40NXaEeu2A_BRQNE78Q">
+                <ownedParameter xmi:id="_9kgcwdXaEeu2A_BRQNE78Q" name="data">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9kgcwtXaEeu2A_BRQNE78Q" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_9khq4NXaEeu2A_BRQNE78Q" name="MergeSorter">
+              <interfaceRealization xmi:id="_9lBaINXaEeu2A_BRQNE78Q" client="_9khq4NXaEeu2A_BRQNE78Q" supplier="_9kjgENXaEeu2A_BRQNE78Q" contract="_9kjgENXaEeu2A_BRQNE78Q"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9lR409XaEeu2A_BRQNE78Q" name="sort" specification="_9kiR8NXaEeu2A_BRQNE78Q">
+                <ownedParameter xmi:id="_9lR41NXaEeu2A_BRQNE78Q" name="data">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lR41dXaEeu2A_BRQNE78Q" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		System.out.println(&quot;merge-sort-is-used&quot;);
+		Arrays.sort(data);
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_9kiR8NXaEeu2A_BRQNE78Q" name="sort" method="_9lR409XaEeu2A_BRQNE78Q">
+                <ownedParameter xmi:id="_9kiR8dXaEeu2A_BRQNE78Q" name="data">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ki5ANXaEeu2A_BRQNE78Q" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_9kjgENXaEeu2A_BRQNE78Q" name="Sorter">
+              <ownedOperation xmi:id="_9kkHINXaEeu2A_BRQNE78Q" name="sort">
+                <ownedParameter xmi:id="_9kkHIdXaEeu2A_BRQNE78Q" name="data">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9kkuMNXaEeu2A_BRQNE78Q" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_9kkuMdXaEeu2A_BRQNE78Q" name="SorterImpl">
+              <ownedAttribute xmi:id="_9lG5sNXaEeu2A_BRQNE78Q" name="sorter" visibility="private" type="_9kjgENXaEeu2A_BRQNE78Q" association="_9lU8INXaEeu2A_BRQNE78Q"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9lSf4NXaEeu2A_BRQNE78Q" name="doSort" specification="_9kl8UNXaEeu2A_BRQNE78Q">
+                <ownedParameter xmi:id="_9lSf4dXaEeu2A_BRQNE78Q" name="data">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lSf4tXaEeu2A_BRQNE78Q" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>sorter.sort(data);
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_9kl8UNXaEeu2A_BRQNE78Q" name="doSort" method="_9lSf4NXaEeu2A_BRQNE78Q">
+                <ownedParameter xmi:id="_9kl8UdXaEeu2A_BRQNE78Q" name="data">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9kl8UtXaEeu2A_BRQNE78Q" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_9lU8INXaEeu2A_BRQNE78Q" name="" memberEnd="_9lU8IdXaEeu2A_BRQNE78Q _9lG5sNXaEeu2A_BRQNE78Q">
+              <ownedEnd xmi:id="_9lU8IdXaEeu2A_BRQNE78Q" name="" type="_9kkuMdXaEeu2A_BRQNE78Q" association="_9lU8INXaEeu2A_BRQNE78Q"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_9kSaUNXaEeu2A_BRQNE78Q" name="App">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9lPckNXaEeu2A_BRQNE78Q" name="main" specification="_9kWEsdXaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9lPckdXaEeu2A_BRQNE78Q" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lPcktXaEeu2A_BRQNE78Q" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>ApplicationContext context = 
+				new AnnotationConfigApplicationContext(AppConfig.class);
+
+		SorterImpl sorterImpl = context.getBean(&quot;sorterImpl&quot;, SorterImpl.class);
+		int[] input = { 4, 1, 3, 2, 5, 9, 21 };
+		sorterImpl.doSort(input);
+		System.out.println(Arrays.toString(input));
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_9kWEsdXaEeu2A_BRQNE78Q" name="main" isStatic="true" method="_9lPckNXaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9kWEstXaEeu2A_BRQNE78Q" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9kXS0NXaEeu2A_BRQNE78Q" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_9kX54NXaEeu2A_BRQNE78Q" name="AppConfig">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9lRRwNXaEeu2A_BRQNE78Q" name="bubbleSorter" specification="_9kZIANXaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9lRRwdXaEeu2A_BRQNE78Q" type="_9kjgENXaEeu2A_BRQNE78Q" direction="return"/>
+              <language>java</language>
+              <body>return new BubbleSorter();
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9lRRwtXaEeu2A_BRQNE78Q" name="mergeSorter" specification="_9ka9MtXaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9lRRw9XaEeu2A_BRQNE78Q" type="_9kjgENXaEeu2A_BRQNE78Q" direction="return"/>
+              <language>java</language>
+              <body>return new MergeSorter();
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9lRRxNXaEeu2A_BRQNE78Q" name="sorterImpl" specification="_9kcLU9XaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9lRRxdXaEeu2A_BRQNE78Q" type="_9kkuMdXaEeu2A_BRQNE78Q" direction="return"/>
+              <language>java</language>
+              <body>return new SorterImpl();
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_9kZIANXaEeu2A_BRQNE78Q" name="bubbleSorter" method="_9lRRwNXaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9lAMANXaEeu2A_BRQNE78Q" type="_9kjgENXaEeu2A_BRQNE78Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_9ka9MtXaEeu2A_BRQNE78Q" name="mergeSorter" method="_9lRRwtXaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9lAMAdXaEeu2A_BRQNE78Q" type="_9kjgENXaEeu2A_BRQNE78Q" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_9kcLU9XaEeu2A_BRQNE78Q" name="sorterImpl" method="_9lRRxNXaEeu2A_BRQNE78Q">
+              <ownedParameter xmi:id="_9lAMAtXaEeu2A_BRQNE78Q" type="_9kkuMdXaEeu2A_BRQNE78Q" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9j4xsNXaEeu2A_BRQNE78Q" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_9j4xsdXaEeu2A_BRQNE78Q" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_9k43QNXaEeu2A_BRQNE78Q" name="Arrays"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9j5YwNXaEeu2A_BRQNE78Q" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_9j5YwdXaEeu2A_BRQNE78Q" name="springframework">
+        <packagedElement xmi:type="uml:Package" xmi:id="_9j5YwtXaEeu2A_BRQNE78Q" name="context">
+          <packagedElement xmi:type="uml:Package" xmi:id="_9j5Yw9XaEeu2A_BRQNE78Q" name="annotation">
+            <packagedElement xmi:type="uml:Class" xmi:id="_9k8hoNXaEeu2A_BRQNE78Q" name="AnnotationConfigApplicationContext"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_9k9vwNXaEeu2A_BRQNE78Q" name="Bean"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_9k-94dXaEeu2A_BRQNE78Q" name="Configuration"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_9k6scNXaEeu2A_BRQNE78Q" name="ApplicationContext"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_9kHbMNXaEeu2A_BRQNE78Q" name="beans">
+          <packagedElement xmi:type="uml:Package" xmi:id="_9kHbMdXaEeu2A_BRQNE78Q" name="factory">
+            <packagedElement xmi:type="uml:Package" xmi:id="_9kHbMtXaEeu2A_BRQNE78Q" name="annotation">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_9lCBMNXaEeu2A_BRQNE78Q" name="Autowired"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_9lDPUdXaEeu2A_BRQNE78Q" name="Qualifier"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_9dgc4NXaEeu2A_BRQNE78Q">
+      <eAnnotations xmi:id="_9dhrANXaEeu2A_BRQNE78Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_9dvGYNXaEeu2A_BRQNE78Q" base_Package="_9VuZ4NXaEeu2A_BRQNE78Q">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_9kYg8NXaEeu2A_BRQNE78Q" base_Element="_9kX54NXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Annotations xmi:id="_9kaWINXaEeu2A_BRQNE78Q" base_Element="_9kZIANXaEeu2A_BRQNE78Q">
+    <annotations xmi:id="_9ka9MNXaEeu2A_BRQNE78Q" name="Bean">
+      <annotationParameters xmi:id="_9ka9MdXaEeu2A_BRQNE78Q" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_9lSf49XaEeu2A_BRQNE78Q" value="&quot;bubble&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_9kcLUNXaEeu2A_BRQNE78Q" base_Element="_9ka9MtXaEeu2A_BRQNE78Q">
+    <annotations xmi:id="_9kcLUdXaEeu2A_BRQNE78Q" name="Bean">
+      <annotationParameters xmi:id="_9kcLUtXaEeu2A_BRQNE78Q" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_9lTG8NXaEeu2A_BRQNE78Q" value="&quot;merge&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_9kcyYNXaEeu2A_BRQNE78Q" base_Element="_9kcLU9XaEeu2A_BRQNE78Q">
+    <annotations xmi:id="_9kcyYdXaEeu2A_BRQNE78Q" name="Bean">
+      <annotationParameters xmi:id="_9kcyYtXaEeu2A_BRQNE78Q" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_9lTG8dXaEeu2A_BRQNE78Q" value="&quot;sorterImpl&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_9keAgNXaEeu2A_BRQNE78Q" base_Element="_9kX54NXaEeu2A_BRQNE78Q">
+    <annotations xmi:id="_9keAgdXaEeu2A_BRQNE78Q" name="Configuration"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_9k6FYNXaEeu2A_BRQNE78Q" base_Element="_9k43QNXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Reference xmi:id="_9k76kNXaEeu2A_BRQNE78Q" base_Element="_9k6scNXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Reference xmi:id="_9k9IsNXaEeu2A_BRQNE78Q" base_Element="_9k8hoNXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Reference xmi:id="_9k-94NXaEeu2A_BRQNE78Q" base_Element="_9k9vwNXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Reference xmi:id="_9k_k8NXaEeu2A_BRQNE78Q" base_Element="_9k-94dXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Reference xmi:id="_9lDPUNXaEeu2A_BRQNE78Q" base_Element="_9lCBMNXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Reference xmi:id="_9lFEgNXaEeu2A_BRQNE78Q" base_Element="_9lDPUdXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_9lHgwNXaEeu2A_BRQNE78Q" base_Element="_9lG5sNXaEeu2A_BRQNE78Q"/>
+  <UMLLabProfile:Annotations xmi:id="_9lIH0NXaEeu2A_BRQNE78Q" base_Element="_9lG5sNXaEeu2A_BRQNE78Q">
+    <annotations xmi:id="_9lIH0dXaEeu2A_BRQNE78Q" name="Autowired"/>
+    <annotations xmi:id="_9lIH0tXaEeu2A_BRQNE78Q" name="Qualifier">
+      <annotationParameters xmi:id="_9lIH09XaEeu2A_BRQNE78Q" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_9lTG8tXaEeu2A_BRQNE78Q" value="&quot;merge&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_9lWKQNXaEeu2A_BRQNE78Q" base_Element="_9lU8INXaEeu2A_BRQNE78Q"/>
+</xmi:XMI>
