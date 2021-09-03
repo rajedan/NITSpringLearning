@@ -37,3 +37,40 @@ session.getTransaction().begin();
 session.save(student);
 session.getTransaction().commit();
 ```
+=> Ways to Read data from DB(2 ways):
+Session.get
+Session.load
+
+These above APIs helps to read data from DB based on primary key. In order to read data based on non-primary-key, we need to use HQL.
+
+
+### Get API:
+
+```java
+Session session = sf.getCurrentSession();
+session.beginTransaction();// OR session.getTransaction().begin();
+Student student = session.get(Student.class, studentId);
+session.getTransaction().commit();//this is optional while reading data from DB
+```
+
+### Load API:
+
+
+### Query#list() API:
+Note: Query is from ``java org.hibernate.query.Query ``
+
+```java
+Session session = sf.getCurrentSession();
+session.beginTransaction();// OR session.getTransaction().begin();
+Student student = session.get(Student.class, studentId);
+session.getTransaction().commit();//this is optional while reading data from DB
+```
+
+sessionFactory.getCurrentSession()
+vs
+sessionFactory.openSession()
+
+
+
+
+![Alt text](./steps-adn-details.png "Title")
